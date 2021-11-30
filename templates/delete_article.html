@@ -1,0 +1,18 @@
+{%extends "base_admin.html"%}
+
+{%block main%}
+
+<form name = “delete” method="post" action="/delete_article" class="delete_form">
+    <h2>Удалить пост</h2>
+
+    {%for article in articles%}
+    <p>
+        <input name = "id" value="{{ article.id }}" id= '{{ article.id }}' type="checkbox">
+        <label for="{{ article.id }}">{{ article.post_name }} </label>
+    </p>
+    {%endfor%}
+
+    <button name="submit" type="submit">УДАЛИТЬ</button>
+</form>
+
+{%endblock%}

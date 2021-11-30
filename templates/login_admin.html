@@ -1,0 +1,13 @@
+{%extends "base_admin.html"%}
+
+{%block main%}
+<form name = “login” method="post" action="/Admin">
+			<h2>Авторизация</h2>
+			<p>{{message}}</p>
+			<input name="login" type="text" required placeholder="Ваш логин"><br>
+			<input name="password" type="password" required placeholder="Ваш пароль"><br>
+			<button name="submit" type="submit">Войти</button>
+</form>
+<div class="fr"><img src="static/images/background11.png"></div>
+
+{%endblock%}

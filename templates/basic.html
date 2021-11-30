@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>nvidia</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../static/css/style.css">
+	</head>
+	<body>
+		<header>
+
+        	<nav>
+            	<ul class="menu" >
+					<li><div class="welcom_user">
+							{%block welcom%}
+							{%endblock%}
+					</div></li>
+                	<li><a href="/">ГЛАВНАЯ</a></li>
+                	<li><a href="/Articles">ВИДЕОКАРТЫ</a></li>
+					<li><a href="https://www.nvidia.com/ru-ru/geforce/rtx/">ИГРЫ И ТЕХНОЛОГИИ</a></li>
+					<li><a href="https://www.nvidia.com/ru-ru/geforce/geforce-experience/">GEFORCE EXPERIENCE</a></li>
+					<li><a href="https://www.nvidia.com/ru-ru/geforce/drivers/">ДРАЙВЕРЫ</a></li>
+					<li><a href="https://www.nvidia.com/ru-ru/geforce/news/">НОВОСТИ</a></li>
+					<li class="ad"><a href="/Admin">ВОЙТИ</a></li>
+           		 </ul>
+        	</nav>
+   		 </header>
+
+		<main>
+			<div class="nw">
+				<div class="logini">
+					{%block login%}
+
+					{%endblock%}
+				</div>
+			</div>
+			{%block main%}
+
+			{%endblock%}
+			<div class="ap">
+				{%block ap%}
+            	{%endblock%}
+			</div>
+			<div class="ar">
+				{%block ar%}
+            	{%endblock%}
+			</div>
+		</main>
+
+		<footer>
+
+		</footer>
+	</body>
+</html>

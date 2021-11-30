@@ -1,0 +1,11 @@
+{%extends "basic.html"%}
+{%block ap%}
+    <div>
+        <section  class="sec">
+            <h2>{{row.post_name}}</h2>
+            <div class="full_post_img"><img src="{{row.post_image}}"  width="460" height="210"></div>
+            <p class="details">Характеристики: {{row.continent}}</p>
+            <p class="details">Добавлено: {{row.created_on}}</p>
+        </section>
+    </div>
+{%endblock%}

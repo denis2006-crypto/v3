@@ -1,0 +1,21 @@
+{%extends "base_admin.html"%}
+
+{%block main%}
+<form name = “add_article” method="post" action="/add_post">
+			<h2>Добавление новой видеокарты</h2>
+			<p>Название</p>
+			<input name="title" type="text" required>
+			<p>Описание</p>
+			<textarea name="text" required rows="7" cols="50"></textarea>
+			<p>Характеристики</p>
+			<div class="con">
+				<textarea name="continent" required rows="7" cols="50"></textarea>
+			</div>
+			<p>Ссылка на картинку</p>
+            <input name="URL" type="url" required >
+			<br>
+			<button name="submit" type="submit">ДОБАВИТЬ</button>
+			<p></p>
+			<button name="reset" type="reset">СБРОС</button>
+</form>
+{%endblock%}

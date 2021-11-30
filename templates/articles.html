@@ -1,0 +1,26 @@
+{%extends "basic.html"%}
+
+{%block ar%}
+
+<section class="logo_articles">
+    <h1></h1>
+</section>
+
+<section class="db">
+    <h2>Видеокарты: новые и мощные</h2>
+    {%for article in articles%}
+        <div class="container">
+            <div class="post_img"><img src="{{ article.post_image }}"  width="460" height="210"></div>
+            <div>
+                <div  class="article_text">
+                    <h3>{{ article.post_name }}</h3>
+                    <p class="text">{{ article.post_text }}</p>
+                </div>
+                <div  class="post_text_link"><a href="/post_details/{{ article.id }}">Подробнее</a></div>
+            </div>
+        </div>
+    <hr>
+    {%endfor%}
+</section>
+
+{%endblock%}
