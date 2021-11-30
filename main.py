@@ -10,11 +10,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] =\
- 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-db = SQLAlchemy(app)
-app.secret_key = 'A78Zrejn359854tjnsT98j/3yX R~XHH!jmN]LWXT'
+
 
 class Admin(db.Model):
     __tablename__ = 'Admin'
